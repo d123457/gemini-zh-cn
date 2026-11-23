@@ -1,0 +1,52 @@
+{
+  "name": "gemini-zh-cn",
+  "version": "1.0.0",
+  "description": "把 Google Gemini Windows 桌面客户端（Electron）界面汉化为简体中文的一键工具，附带完整还原能力",
+  "main": "bin/gemini-zh.js",
+  "bin": {
+    "gemini-zh": "bin/gemini-zh.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "src",
+    "dict",
+    "汉化.cmd",
+    "还原.cmd",
+    "状态.cmd"
+  ],
+  "scripts": {
+    "status": "node bin/gemini-zh.js status",
+    "apply": "node bin/gemini-zh.js apply",
+    "verify": "node bin/gemini-zh.js verify",
+    "restore": "node bin/gemini-zh.js restore",
+    "check:asar": "node tools/check-asar.js"
+  },
+  "keywords": [
+    "gemini",
+    "google-gemini",
+    "electron",
+    "asar",
+    "localization",
+    "i18n",
+    "chinese",
+    "zh-CN",
+    "汉化",
+    "windows"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "os": [
+    "win32"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d123457/gemini-zh-cn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/d123457/gemini-zh-cn/issues"
+  },
+  "homepage": "https://github.com/d123457/gemini-zh-cn#readme"
+}
